@@ -27,7 +27,7 @@ app.use(express.static("public"));
 app.use(cors({
   origin: "*"
 }))
-app.get("/", (req, res) => res.render("index"));
+// app.get("/", (req, res) => res.render("index"));
 
 app.post("/upload", (req, res) => {
   upload(req, res, (err) => {
