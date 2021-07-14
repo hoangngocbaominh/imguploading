@@ -43,6 +43,6 @@ app.post("/upload", (req, res) => {
     }
   });
 });
-const port = 8000;
+const PORT = process.env.PORT || 8000;
 
-app.listen(port, () => console.log(`Server start on port ${port}`));
+app.listen(PORT, () => console.log(`Server start on port ${PORT}`));
